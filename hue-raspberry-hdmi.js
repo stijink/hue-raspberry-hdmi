@@ -5,7 +5,7 @@ var enanleLogging = true;
 
 var HdmiOffCmd  = '/opt/vc/bin/tvservice -o';
 var HdmiOnCmd   = '/opt/vc/bin/tvservice -p && chvt 1 && chvt 7';
-var HdmiTimeout = 1000; //6000 * 5; // 5 Minutes
+var HdmiTimeout = 6000 * 5; // 5 Minutes
 var HdmiTimeoutId = null;
 
 var HueHostname = process.env.HUE_HOST;
