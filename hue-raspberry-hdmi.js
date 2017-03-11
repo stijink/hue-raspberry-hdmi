@@ -25,7 +25,7 @@ if (HueUsername.length == 0) {
 var api = new HueApi(HueHostname, HueUsername);
 
 console.log('Checking for Light Id #' + HueLightId);
-console.log('HDMI Port will be turned off after ' + Math.floor(HdmiTimeout / 6000) + ' Minutes');
+console.log('HDMI Port will be turned off after ' + Math.floor(HdmiTimeout / 60000) + ' Minutes');
 
 checkForLightEverySecond();
 
