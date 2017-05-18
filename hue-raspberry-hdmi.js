@@ -4,7 +4,7 @@ var HueApi = require("node-hue-api").HueApi;
 var intervalId = null;
 
 var HdmiOffCmd  = '/opt/vc/bin/tvservice -o';
-var HdmiOnCmd   = '/opt/vc/bin/tvservice -p && chvt 1 && chvt 7';
+var HdmiOnCmd   = '/opt/vc/bin/tvservice -p && sudo chvt 1 && sudo chvt 7';
 var HdmiTimeout = 60000 * 5; // 5 Minutes
 var HdmiTimeoutId = null;
 
